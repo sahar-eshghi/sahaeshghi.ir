@@ -1,23 +1,30 @@
 const resumeUrl = new URL('../assets/resume.pdf', import.meta.url).href;
+const profileImage = new URL('../assets/images/profile.png', import.meta.url).href;
+const aligolpourImage = new URL('../assets/images/projects/aligolpour.png', import.meta.url).href;
+const imanImage = new URL('../assets/images/projects/iman.png', import.meta.url).href;
+const midwiferyImage = new URL('../assets/images/projects/midwifery.png', import.meta.url).href;
+const modernsazehImage = new URL('../assets/images/projects/modernsazeh.png', import.meta.url).href;
+
 
 export const profile = {
-  name: 'نام شما',
+  name: 'سحر عشقی',
   title: 'توسعه‌دهنده فرانت‌اند',
-  location: 'شهر شما، کشور شما',
-  email: 'you@example.com',
-  github: 'https://github.com/your-username',
-  linkedin: 'https://www.linkedin.com/in/your-username/',
+  location: 'ایران، گیلان',
+  email: 'sahareshghi77@gmail.com',
+  github: 'https://github.com/sahar-eshghi',
+  linkedin: 'https://www.linkedin.com/in/sahar-eshghii/',
   resumeUrl,
+  image: profileImage,
   typewriterTexts: [
     'توسعه‌دهنده فرانت‌اند',
     'طراح رابط کاربری مدرن',
     'عاشق تجربه کاربری خوب',
   ],
-  bio: 'این متن نمونه را با معرفی کوتاه، تخصص‌ها و ارزش پیشنهادی خودتان جایگزین کنید.',
+  bio: 'طراحی وب سایت های مدرن، ریسپانسیو و سئو محور با تمرکز بر زیبایی، عملکرد و تجربه کاربری.',
   stats: [
-    { value: '+۳', label: 'سال تجربه' },
-    { value: '+۲۰', label: 'پروژه انجام‌شده' },
-    { value: '+۱۰', label: 'همکاری موفق' },
+    { value: '+1', label: 'سال تجربه' },
+    { value: '+5', label: 'پروژه انجام‌شده' },
+    { value: '+5', label: 'همکاری موفق' },
   ],
 };
 
@@ -31,32 +38,32 @@ export const navItems = [
 
 export const skillTags = [
   'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Vue.js',
-  'Next.js', 'Tailwind CSS', 'Vite', 'Git', 'Figma', 'REST API', 'PWA', 'تست نویسی',
+  'Tailwind CSS', 'Vite', 'Git', 'Figma', 'REST API', 'PWA', 'تست نویسی',
 ];
 
 export const skillBars = [
-  { name: 'توسعه فرانت‌اند', level: 92 },
-  { name: 'طراحی واکنش‌گرا', level: 95 },
-  { name: 'جاوااسکریپت و تایپ‌اسکریپت', level: 88 },
+  { name: 'توسعه فرانت‌اند', level: 80 },
+  { name: 'طراحی واکنش‌گرا', level: 85 },
+  { name: 'جاوااسکریپت و تایپ‌اسکریپت', level: 80 },
   { name: 'بهینه‌سازی عملکرد', level: 85 },
-  { name: 'دسترسی‌پذیری وب', level: 80 },
+  { name: 'دسترسی‌پذیری وب', level: 75 },
   { name: 'کار تیمی و چابک', level: 90 },
 ];
 
 export const experiences = [
   {
-    period: '۱۴۰۲ — اکنون',
-    role: 'عنوان شغلی شما',
-    company: 'نام شرکت',
-    description: 'شرح کوتاهی از مسئولیت‌ها، دستاوردها و تأثیر شما در این موقعیت.',
-    tags: ['React', 'TypeScript', 'Tailwind'],
+    period: '۱۴۰1 — اکنون',
+    role: 'حسابدار ',
+    company: 'پلاس',
+    description: 'با توانایی انجام امور مالی، ثبت و بررسی اسناد حسابداری، تهیه گزارش‌های مالی و ترجمه متون با دقت و رعایت اصول نگارشی. دارای مهارت در سازمان‌دهی اطلاعات، مدیریت امور اداری و برقراری ارتباط مؤثر.',
+    tags: [],
   },
   {
-    period: '۱۳۹۹ — ۱۴۰۲',
-    role: 'عنوان شغلی قبلی',
-    company: 'نام شرکت یا پروژه',
-    description: 'یک توضیح کوتاه درباره کاری که انجام داده‌اید و نتیجه‌ای که ایجاد کرده‌اید.',
-    tags: ['Vue.js', 'Vite', 'API'],
+    period: '1385 — اکنون',
+    role: 'مترجم زبان انگلیسی ',
+    company: 'private',
+    description: 'مترجم تخصصی و عمومی با سابقهٔ طولانی در ترجمهٔ دقیق و روان متون تخصصی و عمومی، با رعایت اصول نگارشی، امانت‌داری در انتقال مفهوم و تحویل به‌موقع.',
+    tags: [],
   },
 ];
 
@@ -72,30 +79,31 @@ function projectImage(title, color1, color2) {
 export const projects = [
   {
     title: 'پروژه نمونه اول',
-    description: 'توضیح کوتاه درباره پروژه، مسئله‌ای که حل می‌کند و نقش شما در توسعه آن.',
-    image: projectImage('پروژه نمونه', '#444ce7', '#0ea5e9'),
+    description: 'طراحی وب‌سایت کلینیک جراحی و زیبایی دکتر مجید علی‌گل‌پور با رویکردی لوکس، مدرن و واکنش‌گرا.',
+    image: aligolpourImage,
     tags: ['React', 'TypeScript'],
-    link: '',
+    link: 'https://dr-aligolpour.ir',
   },
   {
     title: 'پروژه نمونه دوم',
-    description: 'توضیح کوتاه درباره پروژه و مهم‌ترین قابلیت‌ها یا دستاوردهای آن.',
-    image: projectImage('پروژه نمونه', '#7c3aed', '#db2777'),
-    tags: ['Next.js', 'Tailwind'],
-    link: '',
+    description: 'دفتر ایمان، دفتر املاک و مشاورهٔ حقوقی ملکی در لاهیجان، با خدماتی مثل خرید، فروش، رهن و اجاره، تنظیم قرارداد و بررسی اسناد ملکی.',
+    image: imanImage,
+    tags: ['React', 'TypeScript'],
+    link: 'https://dr-aligolpour.ir',
   },
   {
     title: 'پروژه نمونه سوم',
-    description: 'توضیح کوتاه درباره پروژه و تکنولوژی‌های استفاده‌شده در آن.',
-    image: projectImage('پروژه نمونه', '#0284c7', '#059669'),
-    tags: ['Vue', 'Vite'],
-    link: '',
+    description: 'کلینیک مامایی، مرکزی تخصصی برای مراقبت از سلامت زنان در دوران بارداری، زایمان و پس از زایمان، با خدماتی مثل مشاوره، آموزش و پیگیری مادر و نوزاد.',
+    image: midwiferyImage,
+    tags: ['React', 'TypeScript'],
+    link: 'https://dr-aligolpour.ir',
   },
   {
-    title: 'رزومه آنلاین',
-    description: 'همین قالب رزومه شخصی؛ آن را شخصی‌سازی کنید و پروژه خودتان را جایگزین کنید.',
-    image: projectImage('رزومه آنلاین', '#d97706', '#dc2626'),
-    tags: ['Vite', 'Tailwind', 'Vanilla JS'],
-    link: 'https://github.com/your-username/personal-resume-template',
+    title: 'پروژه نمونه چهارم',
+    description: 'املاک مدرن سازه، مشاور املاک با رویکرد حرفه‌ای و مدرن برای خرید، فروش، رهن، اجارهٔ ملک و پیگیری امور ملکی.',
+    image: modernsazehImage,
+    tags: ['React', 'TypeScript'],
+    link: 'https://dr-aligolpour.ir',
   },
 ];
+

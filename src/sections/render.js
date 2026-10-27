@@ -10,7 +10,7 @@ import {
 
 export function renderNavigation() {
   const logo = document.getElementById('nav-logo');
-  logo.innerHTML = `${icons.logo}<span>لوگو شما</span>`;
+  logo.innerHTML = `${icons.logo}<span>سحر عشقی</span>`;
 
   const navLinks = document.getElementById('nav-links');
   const mobileNavLinks = document.getElementById('mobile-nav-links');
@@ -81,9 +81,9 @@ export function renderHero() {
               <span class="status-dot"></span>
               آنلاین
             </div>
-            <div class="w-full aspect-square rounded-2xl bg-gradient-to-br from-primary-500 via-primary-600 to-accent-500 flex items-center justify-center shadow-lg shadow-primary-500/30">
-              <span class="text-white text-7xl font-black select-none">${profile.name.charAt(0)}</span>
-            </div>
+           <div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg shadow-primary-500/30">
+          <img src="${profile.image}" alt="${profile.name}" class="w-full h-full object-cover object-top" width="280" height="280" />
+          </div>
             <div class="mt-5 text-center">
               <p class="font-bold text-lg text-slate-900 dark:text-white">${profile.name}</p>
               <p class="text-primary-600 dark:text-primary-400 text-sm mt-1 font-medium">${profile.title}</p>
@@ -234,7 +234,7 @@ export function renderFooter() {
     <div class="border-t border-slate-200/60 dark:border-slate-800/60">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500 dark:text-slate-400">
         <p>© ${year} ${profile.name}</p>
-        <p class="flex items-center gap-1.5">طراحی و توسعه با ${icons.code}</p>
+        <p class="flex items-center gap-1.5">طراحی و توسعه با خلاقیت و کدنویسی ${icons.code}</p>
       </div>
     </div>
   `;
